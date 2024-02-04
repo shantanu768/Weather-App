@@ -1,0 +1,92 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('./img.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.weather-container {
+    max-width: 400px;
+    margin: 25px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0);
+    border-radius: 20px;
+    box-shadow: 0 0 3px rgb(0, 0, 0);
+    backdrop-filter: blur(7px);
+}
+
+.weather-container:hover {
+    background: linear-gradient(#fbfafa15, #f6f4f436);
+}
+
+h1 {
+    font-size: 40px;
+    background: linear-gradient(-20deg, #2e95fc, #5b44ff, #b721ff, #cf21ff, #cf21ff, #21d4fd, #2e95fc);
+    transition: all 0.1s;
+    animation: 3s ease-in-out dance infinite both;
+    transform: scale(1.1) translateY(-1px);
+    background-clip: text;
+    color: transparent;
+    margin-bottom: 20px;
+}
+
+
+@keyframes dance {
+    from {
+        background-position: 0px;
+    }
+
+    to {
+        background-position: 350px;
+    }
+}
+
+input {
+    padding: 15px;
+    width: calc(70% - 10px);
+    border: none;
+    border-radius: 10px 0 0 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    padding: 15px;
+    width: calc(30% - 10px);
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+button:hover {
+    background-color: #000;
+}
+
+.weather-info {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.weather-info div {
+    margin-bottom: 15px;
+}
+
+.weather-info strong {
+    color: #000;
+}
+
+span {
+    font-weight: bold;
+    color: #333;
+}

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style2.css" />
+  </head>
+  <body>
+    <div class="weather-container">
+      <h1>Weather App</h1>
+      <form id="weatherForm">
+    
+        <div class="input-group">
+          <input type="text" id="city" name="city" placeholder="Enter City" required />
+          <button type="submit">Get Weather</button>
+        </div>
+      </form>
+      <div class="weather-info">
+        <div><strong>City:</strong> <span id="cityName">--</span></div>
+        <div>
+          <strong>Cloud Percentage:</strong> <span id="cloud_pct">--</span>
+        </div>
+        <div><strong>Temperature:</strong> <span id="temp">--</span>°C</div>
+        <div>
+          <strong>Feels Like:</strong> <span id="feels_like">--</span>°C
+        </div>
+        <div><strong>Humidity:</strong> <span id="humidity">--</span>%</div>
+        <div>
+          <strong>Min Temperature:</strong> <span id="min_temp">--</span>°C
+        </div>
+        <div>
+          <strong>Max Temperature:</strong> <span id="max_temp">--</span>°C
+        </div>
+        <div>
+          <strong>Wind Speed:</strong> <span id="wind_speed">--</span> m/s
+        </div>
+        <div>
+          <strong>Wind Degrees:</strong> <span id="wind_degrees">--</span>°
+        </div>
+        <div><strong>Sunrise:</strong> <span id="sunrise">--</span></div>
+        <div><strong>Sunset:</strong> <span id="sunset">--</span></div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
